@@ -5,9 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "generate": "prisma generate",
-    "postinstall": "tsc && prisma generate"
+    "build": "tsc && prisma generate",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",
